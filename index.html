@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="screen1" class="screen active soft">
+    <p class="text",>
+      It seems like someone<br>
+      sent you a letter
+    </p>
+    <p class="text small">check it out?</p>
+
+    <div class="choices">
+      <button onclick="goToScreen(2)">yes</button>
+      <button class="no" onclick="shake(this)">no</button>
+    </div>
+  </div>
+
+
+  <div id="screen2" class="screen soft">
+  <div class="letters-container"></div>
+    <H6 class="text small">open letter?</H6>
+
+    <img src="C:\Users\Kukku\Downloads\Caixa De Correio De Desenho Bonito Esquema De Cor Rosa E Vermelho _ PNG baixar grátis - Pikbest.jfif" 
+class="envelope" onclick="goToScreen(3)">
+    <div class="choices">
+      <button onclick="goToScreen(3)">yes</button>
+      <button class="no" onclick="shake(this)">no</button>
+    </div>
+  </div>
+
+
+  <div id="screen3" class="screen soft">
+    <div class="hearts">
+      <img src="C:\Users\Kukku\Downloads\catwithflower.png">
+      <img src="C:\Users\Kukku\Downloads\catwithflower.png">
+    </div>
+    <p class="text small">
+      loading.<br>
+      <span id="percent">0%</span>
+    </p>
+  </div>
+
+
+<!-- SCREEN 5 : FEBRUARY CALENDAR -->
+<div id="screen5" class="screen soft">
+<div class="balloon-container"></div>
+
+  <h1 class="calendar-title">February</h1>
+
+  <div class="calendar">
+
+    <!-- 1 to 22 -->
+    <button onclick="smallMsg()">1</button>
+    <button onclick="smallMsg()">2</button>
+    <button onclick="smallMsg()">3</button>
+    <button onclick="smallMsg()">4</button>
+    <button onclick="smallMsg()">5</button>
+    <button onclick="smallMsg()">6</button>
+    <button onclick="smallMsg()">7</button>
+
+    <button onclick="smallMsg()">8</button>
+    <button onclick="smallMsg()">9</button>
+    <button onclick="smallMsg()">10</button>
+    <button onclick="smallMsg()">11</button>
+    <button onclick="smallMsg()">12</button>
+    <button onclick="smallMsg()">13</button>
+    <button onclick="smallMsg()">14</button>
+
+    <button onclick="smallMsg()">15</button>
+    <button onclick="smallMsg()">16</button>
+    <button onclick="smallMsg()">17</button>
+    <button onclick="smallMsg()">18</button>
+    <button onclick="smallMsg()">19</button>
+    <button onclick="smallMsg()">20</button>
+    <button onclick="smallMsg()">21</button>
+
+    <button onclick="smallMsg()">22</button>
+
+    <!-- BIRTHDAY -->
+    <button class="birthday-date" onclick="goToScreen(6)">23</button>
+
+    <!-- 24 to 29 -->
+    <button onclick="smallMsg()">24</button>
+    <button onclick="smallMsg()">25</button>
+    <button onclick="smallMsg()">26</button>
+    <button onclick="smallMsg()">27</button>
+    <button onclick="smallMsg()">28</button>
+    <button onclick="smallMsg()">29</button>
+
+  </div>
+
+</div>
+
+
+<!-- SCREEN 6 : HAPPY BIRTHDAY -->
+<div id="screen6" class="screen soft">
+ <div class="confetti-container"></div>
+
+  <h1 class="birthday-text"> HAPPY BIRTHDAY ☆*: .｡. o(≧▽≦)o .｡.:*☆</h1>
+  
+  <img src="C:\Users\Kukku\Downloads\anya.png" class="floating-img">
+
+  <button onclick="goToScreen(5)">Back to Calendar</button>
+
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
